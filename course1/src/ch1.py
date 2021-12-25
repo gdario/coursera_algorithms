@@ -44,8 +44,7 @@ def karatsuba(x, y):
 
 
 def merge(left, right):
-    """Merge the left and right halves in a mergesort.
-    IMPORTANT: we assume that there are no duplicate entries."""
+    """Merge the left and right halves in a mergesort."""
     left_length = len(left)
     right_length = len(right)
     output_length = left_length + right_length

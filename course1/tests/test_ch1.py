@@ -33,6 +33,10 @@ class TestAlignNumbers(unittest.TestCase):
         self.assertEqual(mergesort([1, 7, 3, 5, 2, 4, 6]),
                          [1, 2, 3, 4, 5, 6, 7])
 
+    def test_mergesort_ties(self):
+        self.assertEqual(mergesort([1, 3, 2, 6, 5, 3, 4]),
+                         [1, 2, 3, 3, 4, 5, 6])
+
 
 if __name__ == '__main__':
     unittest.main()
