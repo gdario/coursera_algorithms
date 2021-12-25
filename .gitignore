@@ -1,3 +1,6 @@
+**/*.swp
 .vscode
+course1/src/__pycache__/
+course1/tests/__pycache__/
 course1/slides/
 course1/src/.vscode

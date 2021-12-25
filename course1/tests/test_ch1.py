@@ -1,6 +1,6 @@
 import unittest
 
-from ch1 import align_numbers, karatsuba
+from src.ch1 import align_numbers, karatsuba, mergesort
 
 
 class TestAlignNumbers(unittest.TestCase):
@@ -25,6 +25,13 @@ class TestAlignNumbers(unittest.TestCase):
     def test_different_and_large(self):
         self.assertEqual('38212069602071645984334',
                          karatsuba('1280984532098', '29830234983'))
+
+    def test_mergesort_even(self):
+        self.assertEqual(mergesort([3, 1, 4, 2]), [1, 2, 3, 4])
+
+    def test_mergesort_odd(self):
+        self.assertEqual(mergesort([1, 7, 3, 5, 2, 4, 6]),
+                         [1, 2, 3, 4, 5, 6, 7])
 
 
 if __name__ == '__main__':
