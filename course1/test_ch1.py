@@ -1,6 +1,6 @@
 import unittest
 
-from src.ch1 import align_numbers, karatsuba, mergesort
+from ch1 import align_numbers, karatsuba, mergesort
 
 
 class TestAlignNumbers(unittest.TestCase):
