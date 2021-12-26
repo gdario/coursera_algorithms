@@ -85,3 +85,27 @@ def mergesort(x):
 
     merged = merge(sorted_left, sorted_right)
     return merged
+
+
+def findmax(x):
+    len_x = len(x)
+    if len_x == 1:
+        return x[0]
+    midpoint = len_x // 2
+    left = x[:midpoint]
+    right = x[midpoint:]
+    maxleft = findmax(left)
+    maxright = findmax(right)
+    return maxleft if maxleft > maxright else maxright
+
+
+def find_second_largest(x):
+    largest = findmax(x)
+    second_largest = 0
+    for i in range(len(x)):
+        if x[i] != largest and x[i] > second_largest:
+            second_largest = x[i]
+    return second_largest
+
+
+print(findmax([1, 2, 6, 4]))
