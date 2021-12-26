@@ -1,6 +1,6 @@
 import unittest
 
-from ch1 import align_numbers, karatsuba, mergesort
+from ch1 import align_numbers, find_second_largest, karatsuba, mergesort, findmax
 
 
 class TestAlignNumbers(unittest.TestCase):
@@ -16,6 +16,8 @@ class TestAlignNumbers(unittest.TestCase):
     def test_already_aligned(self):
         self.assertEqual(align_numbers('1234', '5678'), ('1234', '5678'))
 
+
+class TestKaratsuba(unittest.TestCase):
     def test_equal_length(self):
         self.assertEqual('7006652', karatsuba('1234', '5678'))
 
@@ -26,6 +28,8 @@ class TestAlignNumbers(unittest.TestCase):
         self.assertEqual('38212069602071645984334',
                          karatsuba('1280984532098', '29830234983'))
 
+
+class TestMergesort(unittest.TestCase):
     def test_mergesort_even(self):
         self.assertEqual(mergesort([3, 1, 4, 2]), [1, 2, 3, 4])
 
@@ -36,6 +40,22 @@ class TestAlignNumbers(unittest.TestCase):
     def test_mergesort_ties(self):
         self.assertEqual(mergesort([1, 3, 2, 6, 5, 3, 4]),
                          [1, 2, 3, 3, 4, 5, 6])
+
+
+class TestFindmax(unittest.TestCase):
+    def test_small_array(self):
+        self.assertEqual(findmax([1, 2, 6, 4]), 6)
+
+    def test_larger(self):
+        self.assertEqual(findmax([0, 1, 3, 5, 11, 9, 7, 4]), 11)
+
+
+class TestFindSecondLargest(unittest.TestCase):
+    def test_small_array(self):
+        self.assertEqual(find_second_largest([1, 2, 6, 4]), 4)
+
+    def test_larger(self):
+        self.assertEqual(find_second_largest([0, 1, 3, 5, 11, 9, 7, 4]), 9)
 
 
 if __name__ == '__main__':

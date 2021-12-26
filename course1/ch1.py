@@ -54,7 +54,7 @@ def merge(left, right):
 
     for k in range(output_length):
         if i < left_length and j < right_length:
-            if left[i] < right[j]:
+            if left[i] <= right[j]:
                 output[k] = left[i]
                 i += 1
             else:
