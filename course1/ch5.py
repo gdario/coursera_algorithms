@@ -17,7 +17,7 @@ class QuickSort:
         return right
 
     def choose_median_of_three_pivot(self, left, right):
-        mid = (right - left) // 2
+        mid = left + (right - left) // 2
         if (self.data[left] < self.data[mid] < self.data[right]) or (
                 self.data[right] < self.data[mid] < self.data[left]):
             return mid
