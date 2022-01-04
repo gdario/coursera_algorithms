@@ -1,5 +1,6 @@
 **/*.swp
 **/.vscode
 **/__pycache__/
-course1/slides/
+**/*.pyc
+**/slides/
 course1/*.txt
