@@ -7,7 +7,7 @@ Given an adjacency-list representation of a directed graph, where each vertex ma
 - $\theta(n)$
 - $\theta(k)$
 - Cannot determine from the given information
-- $\theta(m)$
+- $\theta(m)$ CORRECT
 
 ## Question 2
 
@@ -17,7 +17,7 @@ If G is given in its adjacency list representation, then the above problem can b
 
 Suppose instead that G is given in its adjacency *matrix* representation.  What running time is required, in the worst case, to solve the computational problem stated above?  (Assume that G has no parallel edges.)
 
-- $theta(n^2)$
+- $theta(n^2)$ CORRECT
 - $\theta(n*m)$
 - $\theta(m+n)$
 - $\theta(m + n \log n)$
@@ -30,9 +30,9 @@ Next, for a vertex s, let l(s) denote the maximum, over all vertices t, of the s
 
  Which of the following inequalities always hold (i.e., in every undirected connected graph) for the radius rrr and the diameter ddd?  [Select all that apply.]
 
-- $r\ge d$
+- $r\ge d$ WRONG (A path is a counterexample).
 - $r \le d/2$
-- $r \le d$
+- $r \le d$ CORRECT (by the definitions, $l(x) \le d$ for every $s$)
 - $r \ge d/2$
 
 ## Question 4
@@ -41,16 +41,16 @@ Consider our algorithm for computing a topological ordering that is based on dep
 
 For example, consider the four-node graph with the six directed edges (s,v),(s,w),(v,w),(v,t),(w,t),(t,s)(s,v),(s,w),(v,w),(v,t),(w,t),(t,s)(s,v),(s,w),(v,w),(v,t),(w,t),(t,s).  Suppose the vertices are ordered s,v,w,ts,v,w,ts,v,w,t.  Then there is one backwards arc, the (t,s)(t,s)(t,s) arc.  No ordering of the vertices has zero backwards arcs, and some have more than one.
 
-- Always
+- Always WRONG (There are counterexamples. Can you find one?)
 - If and only if the graph is a directed cycle
 - Never
 - Sometimes yes, sometimes no
 
 ## Question 5
 
-On adding one extra edge to a directed graph GGG, the number of strongly connected components...?
+On adding one extra edge to a directed graph G, the number of strongly connected components...?
 
-- ...could remain the same (for some graphs GGG)
-- ...never decreases (no matter what GGG is)
-- ...never decreases by more than 1 (no matter what GGG is)
-- ...will definitely not change (no matter what GGG is)
+- could remain the same (for some graphs G)
+- never decreases (no matter what G is) WRONG (What if the graph is a directed path?)
+- never decreases by more than 1 (no matter what G is)
+- will definitely not change (no matter what G is)
