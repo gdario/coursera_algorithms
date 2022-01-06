@@ -17,7 +17,7 @@ If G is given in its adjacency list representation, then the above problem can b
 
 Suppose instead that G is given in its adjacency *matrix* representation.  What running time is required, in the worst case, to solve the computational problem stated above?  (Assume that G has no parallel edges.)
 
-- $theta(n^2)$ CORRECT
+- $\theta(n^2)$ CORRECT
 - $\theta(n*m)$
 - $\theta(m+n)$
 - $\theta(m + n \log n)$
@@ -37,9 +37,9 @@ Next, for a vertex s, let l(s) denote the maximum, over all vertices t, of the s
 
 ## Question 4
 
-Consider our algorithm for computing a topological ordering that is based on depth-first search (i.e., NOT the "straightforward solution").  Suppose we run this algorithm on a graph GGG that is NOT directed acyclic.  Obviously it won't compute a topological order (since none exist).  Does it compute an ordering that minimizes the number of edges that go backward?
+Consider our algorithm for computing a topological ordering that is based on depth-first search (i.e., NOT the "straightforward solution").  Suppose we run this algorithm on a graph G that is NOT directed acyclic.  Obviously it won't compute a topological order (since none exist).  Does it compute an ordering that minimizes the number of edges that go backward?
 
-For example, consider the four-node graph with the six directed edges (s,v),(s,w),(v,w),(v,t),(w,t),(t,s)(s,v),(s,w),(v,w),(v,t),(w,t),(t,s)(s,v),(s,w),(v,w),(v,t),(w,t),(t,s).  Suppose the vertices are ordered s,v,w,ts,v,w,ts,v,w,t.  Then there is one backwards arc, the (t,s)(t,s)(t,s) arc.  No ordering of the vertices has zero backwards arcs, and some have more than one.
+For example, consider the four-node graph with the six directed edges (s,v),(s,w),(v,w),(v,t),(w,t),(t,s)  Suppose the vertices are ordered s,v,w,t.  Then there is one backwards arc, the (t,s) arc.  No ordering of the vertices has zero backwards arcs, and some have more than one.
 
 - Always WRONG (There are counterexamples. Can you find one?)
 - If and only if the graph is a directed cycle
