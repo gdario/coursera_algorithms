@@ -4,3 +4,4 @@
 **/*.pyc
 **/slides/
 course1/*.txt
+course2/scc.txt
