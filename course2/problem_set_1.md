@@ -33,7 +33,7 @@ Next, for a vertex s, let l(s) denote the maximum, over all vertices t, of the s
 - $r\ge d$ WRONG (A path is a counterexample).
 - $r \le d/2$
 - $r \le d$ CORRECT (by the definitions, $l(x) \le d$ for every $s$)
-- $r \ge d/2$
+- $r \ge d/2$ CORRECT
 
 ## Question 4
 
@@ -44,13 +44,13 @@ For example, consider the four-node graph with the six directed edges (s,v),(s,w
 - Always WRONG (There are counterexamples. Can you find one?)
 - If and only if the graph is a directed cycle
 - Never
-- Sometimes yes, sometimes no
+- Sometimes yes, sometimes no CORRECT
 
 ## Question 5
 
 On adding one extra edge to a directed graph G, the number of strongly connected components...?
 
-- could remain the same (for some graphs G)
+- could remain the same (for some graphs G) CORRECT
 - never decreases (no matter what G is) WRONG (What if the graph is a directed path?)
 - never decreases by more than 1 (no matter what G is)
 - will definitely not change (no matter what G is)
