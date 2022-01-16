@@ -2,7 +2,7 @@
 
 ## Question 1
 
-Given an adjacency-list representation of a directed graph, where each vertex maintains an array of its outgoing edges (but *not* its incoming edges), how long does it take, in the worst case, to compute the in-degree of a given vertex?  As usual, we use nnn and mmm to denote the number of vertices and edges, respectively, of the given graph.  Also, let kkk denote the maximum in-degree of a vertex. (Recall that the in-degree of a vertex is the number of edges that enter it.)
+Given an adjacency-list representation of a directed graph, where each vertex maintains an array of its outgoing edges (but *not* its incoming edges), how long does it take, in the worst case, to compute the in-degree of a given vertex?  As usual, we use n and m to denote the number of vertices and edges, respectively, of the given graph.  Also, let k denote the maximum in-degree of a vertex. (Recall that the in-degree of a vertex is the number of edges that enter it.)
 
 - $\theta(n)$
 - $\theta(k)$
@@ -24,11 +24,11 @@ Suppose instead that G is given in its adjacency *matrix* representation.  What 
 
 ## Question 3
 
-This problem explores the relationship between two definitions about graph distances.  In this problem, we consider only graphs that are undirected and connected.  The diameter of a graph is the maximum, over all choices of vertices s and t, of the shortest-path distance between s and t.  (Recall the shortest-path distance between s and t is the fewest number of edges in an s-t path.)  
+This problem explores the relationship between two definitions about graph distances.  In this problem, we consider only graphs that are undirected and connected.  The diameter of a graph is the maximum, over all choices of vertices s and t, of the shortest-path distance between s and t. (Recall the shortest-path distance between s and t is the fewest number of edges in an s-t path.)  
 
 Next, for a vertex s, let l(s) denote the maximum, over all vertices t, of the shortest-path distance between s and t.  The radius of a graph is the minimum of l(s) over all choices of the vertex s.
 
- Which of the following inequalities always hold (i.e., in every undirected connected graph) for the radius rrr and the diameter ddd?  [Select all that apply.]
+ Which of the following inequalities always hold (i.e., in every undirected connected graph) for the radius r and the diameter d?  [Select all that apply.]
 
 - $r\ge d$ WRONG (A path is a counterexample).
 - $r \le d/2$
