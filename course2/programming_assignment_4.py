@@ -44,5 +44,5 @@ def iterative_counter(values, targets):
 
 
 if __name__ == '__main__':
-    values = read_data('course2/prob_2sum.txt')
+    values = read_data('prob_2sum.txt')
     print(iterative_counter(values, range(-10000, 10001)))
